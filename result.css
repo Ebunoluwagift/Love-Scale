@@ -1,0 +1,224 @@
+body{
+  background-color: #FFEADD;
+}
+
+section{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+
+                           /** NAVIGATION BAR**/
+/*
+                           .navbar-collapse{
+                             right: 0;
+                             position: absolute;
+                             margin-top: -40px;
+                           } */
+
+                           .navbar{
+                             padding-left: 30px;
+                             padding-right: 30px;
+                           }
+
+                           .navbar-nav{
+                            margin-top: 0;
+                           }
+
+                           .nav-link{
+                             color: black;
+                             font-family: "Lemonada", cursive;
+                             font-optical-sizing: auto;
+                             font-style: normal;
+                           }
+
+                           .nav-link:hover{
+                             color: #FF8989;
+                           }
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin-top: 40px;
+  display: inline;
+}
+
+.logo{
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+.ls{
+  color: black;
+  padding-top: 5px;
+}
+
+.ham{
+  font-size: 12px;
+  color: black;
+  float: left;
+  padding-right: 37px;
+}
+
+.ham:link{
+  text-decoration: none;
+}
+
+.ham:hover{
+  color: #FF6666;
+}
+
+                                                   /** TEXT AND PICTURE**/
+h1{
+ text-align: center;
+ font-family: "Lemonada", cursive;
+ font-optical-sizing: auto;
+ font-style: normal;
+ font-size: 20px;
+}
+
+h3{
+  font-family: "Pacifico", cursive;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+p{
+  font-family: "Lemonada", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  /* color: black; */
+}
+
+h4{
+  text-align: center;
+  font-family: "Lemonada", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 15px;
+  color: #FF8989;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+h2{
+  color: #EF5E6B;
+  font-family: "Lemonada", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 128px;
+}
+
+.percent{
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.conclusion{
+  color: #FF8989;
+  font-size: 20px;
+  text-align: center;
+}
+
+.couple-img{
+  width: 310px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 15px;
+}
+
+.button{
+  background-color: #FF8989;
+  width: 105px;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 6px #999;
+  padding-top: 4px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-top: 80px;
+  color: #FFEADD;
+  padding-right: 8px;
+  font-family: "Lemonada", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.button:hover{
+  background-color: #FFEADD;
+  color: #FF8989;
+}
+
+.button:active{
+  background-color: #FFEADD;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+                                      /* FOOTER */
+                                      .column{
+                                        float: left;
+                                        width: 50%;
+                                        padding-left: 0;
+                                        padding-right: 0;
+                                        margin-left: 0;
+                                        margin-right: 0;
+                                      }
+
+                                      .container-fluid{
+                                        margin-top: 80px;
+                                        font-size: 13px;
+                                        display: block;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                      }
+
+                                      .copyright{
+                                        float: right;
+                                      }
+
+                                      .footer-icons{
+                                        padding-top: 10px;
+                                        padding-left: 10px;
+                                        padding-right: 10px;
+                                        text-decoration: none;
+                                        color: black;
+                                      }
+
+                                      .fa:hover{
+                                        color: #FF8989;
+                                      }
+
+/* MAKING THE PAGE RESPONSIVE */
+
+@media (max-width: 992px) {
+
+  h1{
+    line-height: 2rem;
+  }
+/*
+  .navbar-collapse{
+    position: relative;
+    text-align: center;
+  } */
+
+  .navbar-toggler{
+    color: #FF8989;
+    background-color: #FFEADD;
+  }
+
+  .navbar-nav{
+    text-align: center;
+  }
+
+  h4{
+    padding-top: 50px;
+  }
+
+}
