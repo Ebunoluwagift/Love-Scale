@@ -345,8 +345,8 @@ input:focus{
     padding-right: 0;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 110px;
-    padding-bottom: 10px;
+    padding-left: 0;
+    margin-bottom: 0;
   }
 
   .another{
@@ -364,6 +364,7 @@ input:focus{
       width: 312.62px;
       height: 229.41px;
       float: none;
+      margin: auto;
   }
 
   .two{
@@ -373,6 +374,7 @@ input:focus{
       height: 229.41px;
       float: none;
       padding-bottom: 0;
+      margin: auto;
   }
 
   h1{
@@ -386,6 +388,10 @@ input:focus{
 
   .navbar-nav{
     text-align: center;
+  }
+
+  .logo-img{
+    margin-top: 40px;
   }
 
 }
