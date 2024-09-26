@@ -12,7 +12,7 @@ let form8 = document.querySelectorAll("input")[7];
 
 
 
-  button.addEventListener("click", validateForm);
+  button.addEventListener("click", validateForm, {once : true});
   function validateForm() {
     if (form1.value === "" || form2.value === "" || form3.value === "" || form4.value === "" || form5.value === "") {
        alert("⚠️ Please fill in the details before submitting");
