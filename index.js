@@ -24,19 +24,19 @@ let form8 = document.querySelectorAll("input")[7];
       setTimeout(calc, 1000);
 
       function calc() {
-            document.querySelector(".Submit").innerHTML = "Calculating";
+            let image = document.createElement("img");
+
+        image.src = "Images/Spinner@1x-1.0s-200px-200px (1).svg";
+        image.alt = "loading icon";
+        image.style = "padding-left: 12px";
+        document.querySelector(".load-icon").appendChild(image);
+
             document.querySelector(".load-icon").classList.add("visible");
             document.querySelectorAll("button")[1].classList.remove("button");
             document.querySelectorAll("button")[1].classList.add("Calculating");
             document.querySelectorAll("div")[19].classList.remove("Submit");
             document.querySelectorAll("div")[19].classList.add("calculate");
-
-            let image = document.createElement("img");
-
-            image.src = "Images/Spinner@1x-1.0s-200px-200px (1).svg";
-            image.alt = "loading icon";
-            image.style = "padding-left: 12px";
-            document.querySelector(".load-icon").appendChild(image);
+            document.querySelector(".calculate").innerHTML = "Calculating";
       }
 
       setTimeout(initial, 8000);
@@ -49,6 +49,15 @@ let form8 = document.querySelectorAll("input")[7];
             window.location.assign("result.html");
           }, 9000);
 
+       setTimeout(function(){
+           document.querySelector(".load-icon").removeChild(image);
+           document.querySelector(".load-icon").classList.remove("visible");
+           document.querySelectorAll("button")[1].classList.remove("Calculating");
+           document.querySelectorAll("button")[1].classList.add("button");
+           document.querySelectorAll("div")[19].classList.remove("calculate");
+           document.querySelectorAll("div")[19].classList.add("Submit");
+           document.querySelector(".Submit").innerHTML = "Submit";
+          }, 10000);
     }
   }
 
