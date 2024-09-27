@@ -97,3 +97,36 @@ for (var i = 0; i < input.length; i++) {
      this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.querySelector("button").click();
     }
   }
+
+                                      // FOR THE FOOTER TO GLOW WHEN CONTACT IS CLICKED
+
+ document.querySelectorAll("a")[2].addEventListener("click", function () {
+  setTimeout(glow1, 500);
+  function glow1() {
+  document.querySelectorAll(".fa")[0].style.color = "#FF8989";
+  }
+
+  setTimeout(glow2, 800);
+  function glow2() {
+  document.querySelectorAll(".fa")[1].style.color = "#FF8989";
+  }
+
+  setTimeout(glow3, 1100);
+  function glow3() {
+  document.querySelectorAll(".fa")[2].style.color = "#FF8989";
+  }
+
+  setTimeout(glownot1, 2100);
+  function glownot1() {
+  document.querySelectorAll(".fa")[0].style.color = "black";
+  }
+  setTimeout(glownot2, 1800);
+  function glownot2() {
+  document.querySelectorAll(".fa")[1].style.color = "black";
+  }
+  setTimeout(glownot3, 1500);
+  function glownot3() {
+  document.querySelectorAll(".fa")[2].style.color = "black";
+  }
+
+});
